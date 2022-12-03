@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Front-end developer Portfolio. Based in Lisbon, Portugal. Good Knowledge in React and Typescript">
+    <meta name="keywords" content="Front-end developer, developer, self-taught, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/abffcc366b.js" crossorigin="anonymous"></script>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Maria Tati | Portfolio</title>
+</head>
+<body class="font-raleway">
+    <!--Navegation | Side Bar-->
+    <nav class="navBar z-20">
+        <ul class="navLinks">
+            <!--Logo-->
+            <li class="logo" >
+                <a href="#home" class="nav-link">
+                    <span class="logo-text">Tati</span>
+                    <svg class="fa-primary" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5
+                         32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 
+                         160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 
+                         256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
+                    </svg>
+                </a>
+            </li>
+            <!--Logo end-->
+            <!--NAV ITEM-->
+            <li class="nav-item">
+                <a href="#home" class="nav-link">
+                    <svg class="fa-primary" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 
+                        40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 
+                        384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5
+                         0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 
+                         0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+                    </svg>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <!--NAV ITEM-->
+            <li class="nav-item">
+                <a href="#about" class="nav-link">
+                    <svg class="fa-primary" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 
+                        48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8
+                         368.2 304 269.7 304H178.3z"/>
+                    </svg>
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+            <!--NAV ITEM-->
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">
+                    <svg fill="#fff" class="fa-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M176 56V96H336V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8zM128 96V56c0-30.9 25.1-56 
+                        56-56H328c30.9 0 56 25.1 56 56V96v32V480H128V128 96zM64 96H96V480H64c-35.3 0-64-28.7-64-64V160c0-35.3 
+                        28.7-64 64-64zM448 480H416V96h32c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64z"/>
+                    </svg>
+                    <span class="link-text">Projects</span>
+                </a>
+            </li>
+            <!--NAV ITEM-->
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                    <svg fill="#fff" class="fa-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM208 
+                        288h64c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16H144c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm96-96c0 35.3-28.7 64-64 
+                        64s-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 
+                        192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 
+                        7.2 16 16 16s16-7.2 16-16V336z"/>
+                    </svg>
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
+            <!--SOCIAL LINKS-->
+            <li class="m-auto nav-item">
+                <a href="https://www.linkedin.com/in/maria-tati/" class="nav-link" target="_blank">
+                    <svg class="fa-secondary" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    <span class="link-text">LinkedIn</span>
+                </a>
+                <a href="https://github.com/Tati-Maria" class="nav-link" target="_blank">
+                    <svg class="fa-terciary" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    <span class="link-text">Github</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Main Section | Header | About | Projects| Contact-->
+    <main class="text-white overflow-hidden">
+        <section class="bg overflow-hidden font-lobster h-72" id="home">
+            <div class="wrapper flex flex-col items-center justify-center space-y-1 my-[20%] sm-[10%] lg:my-[9%] z-10 relative" data-aos="fade-left" data-aos-duration="600"  data-aos-easing="ease-in-sine">
+                <small class="text-2xl font-bold tracking-widest mb-5">Hello!</small>
+                <h1 class="border-2 border-white p-3 text-7xl lg:text-9xl font-thin rounded-sm">I am <span class="font-bold">Tati</span></h1>
+                <p class="text-xl pt-5 pb-2">A front-end developer</p>
+                <p class="font-normal">&rArr; <span class="px-2">Based in Lisbon, Portugal</span>&lArr;</p>
+                <div class="grid place-items-center pt-16">
+                    <a href="#about">
+                        <svg class="w-5 lg:w-6 animate-bounce" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M224 402.7V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V402.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--About section-->
+        <section id="about" class="bg-ghost-white w-screen">
+            <div class="container max-w-5xl mx-auto p-3 md:p-5 lg:p-10 grid grid-col-1 md:grid-cols-2 place-items-center gap-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine">
+                <article class="mt-6" >
+                    <figure class="">
+                        <img src="./images/croppedMaria.jpeg" alt="Maria's photo" class="w-48 sm:w-52 lg:w-72">
+                    </figure>
+                </article>
+                <article class="flex flex-col items-center md:items-start text-smokey-black gap-3 md:gap-2">
+                    <h2 class="title text-dark-blue">About Me</h2>
+                    <p class="about-text">
+                        Hi, I'm Maria Tati. I'm a self taught front-end developer from Angola, currently living in Lisbon, Portugal.
+                        Adept at writing clean and reusable code, bringing designs to live and building accessible web applications that users love.
+                    </p>
+                    <p class="about-text pb-3">
+                        When I'm not coding/studying , I'm either watching a movie , playing my favorite game Dead By Daylight
+                        or learning a new dance move 💃. Feel free to reach out to talk about gaming, tech, collab, or hire me.
+                    </p>
+                        <button class="text-sm lg:text-base inline-block text-dark-blue border-2 border-dark-blue py-2 px-3 rounded-lg shadow-xl duration-500 hover:scale-110">
+                            <a href="#" download="">Download CV <i class="fa-solid fa-download pl-1"></i></a>
+                        </button>    
+                </article>
+            </div>
+            <div class="bg-cadet-blue text-white p-4 mt-10">
+                <div class="container max-w-5xl mx-auto">
+                    <div class="text-center my-2">
+                        <h2 class="title">Skills</h2>
+                    </div>
+                    <ul class="grid grid-cols-4 gap-3 md:gap-5 place-content-center mb-16 p-3">
+                        <li class="skill-container">
+                            <span>HTML5</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>CSS3</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Javascript</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Typescript</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>React</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>NextJs</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Redux</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Tailwind</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Sass</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Bootstrap</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>GraphQl</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Git</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Jest</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>NodeJs</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Vite</span>
+                        </li>
+                        <li class="skill-container">
+                            <span>Parcel</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </section>
+        <!--Project showcase-->
+        <section class="w-screen text-gray-800 p-2 md:p-4 bg-ghost-white" id="projects">
+            <div class="max-w-5xl mx-auto p-5">
+                <h2 class="title text-dark-blue py-10">Projects</h2>
+                <div class=" text-gray-800 grid grid-cols-1 lg:grid-cols-2 place-items-center gap-5">
+                    <article data-aos="zoom-in" data-aos-easing="ease-in-sine" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                        <h4 class="font-extrabold text-xl">Project 1</h4>
+                        <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
+                        <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Typescript</li>
+                        </ul>
+                        <div class="space-x-3">
+                            <button class="text-2xl">
+                                <a href="#">
+                                    <i class="fa-brands fa-github duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm" ></i>
+                                </a>
+                            </button>
+                            <button class="text-xl">
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                    <!--Project 2-->
+                    <article data-aos="zoom-in" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                        <h4 class="font-extrabold text-xl">Project 2</h4>
+                        <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
+                        <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Typescript</li>
+                        </ul>
+                        <div class="space-x-3">
+                            <button class="text-2xl">
+                                <a href="#">
+                                    <i class="fa-brands fa-github duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm" ></i>
+                                </a>
+                            </button>
+                            <button class="text-xl">
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                    <!--Project 3-->
+                    <article data-aos="zoom-in-up" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                        <h4 class="font-extrabold text-xl">Project 3</h4>
+                        <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
+                        <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Typescript</li>
+                        </ul>
+                        <div class="space-x-3">
+                            <button class="text-2xl">
+                                <a href="#">
+                                    <i class="fa-brands fa-github duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm" ></i>
+                                </a>
+                            </button>
+                            <button class="text-xl">
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                    <!--Project 4-->
+                    <article data-aos="zoom-in-up" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                        <h4 class="font-extrabold text-xl">Project 4</h4>
+                        <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
+                        <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Typescript</li>
+                        </ul>
+                        <div class="space-x-3">
+                            <button class="text-2xl">
+                                <a href="#">
+                                    <i class="fa-brands fa-github duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm" ></i>
+                                </a>
+                            </button>
+                            <button class="text-xl">
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                    <!--Project 5-->
+                    <article data-aos="zoom-in" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                        <h4 class="font-extrabold text-xl">Project 5</h4>
+                        <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
+                        <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
+                            <li>React</li>
+                            <li>Sass</li>
+                            <li>Typescript</li>
+                        </ul>
+                        <div class="space-x-3">
+                            <button class="text-2xl">
+                                <a href="#">
+                                    <i class="fa-brands fa-github duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm" ></i>
+                                </a>
+                            </button>
+                            <button class="text-xl">
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square duration-300 hover:text-cadet-blue focus:shadow-sm active:shadow-sm"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Contact form-->
+        <section class="w-screen bg-cadet-blue text-white p-4" id="contact">
+            <div data-aos="zoom-out" class="max-w-5xl mx-auto flex items-center flex-col py-5">
+                <h2 class="title">Get in Touch!</h2>
+                <p class="lg:text-lg tracking-wide text-stone-100 text-center py-4 font-light text-sm px-6 lg:px-0">
+                    Got a question? A project in mind? Looking for a new addition to your front-end team? or just want to talk?
+                   Go ahead <span class="text-red-500">&hearts;</span>.
+                </p>
+                <section class="flex items-center gap-5">
+                    <div>
+                        <a href="https://github.com/Tati-Maria" target="_blank" class="flex items-center gap-2 duration-500 hover:scale-110 opacity-75 active:opacity-100">
+                            <img src="./images/icons/github.svg" alt="github" class="w-4 lg:w-6">
+                            <span>Github</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/maria-tati/" target="_blank" class="flex items-center gap-2 duration-500 hover:scale-110 opacity-75 active:opacity-100">
+                            <img src="./images/icons/linkedin.svg" alt="LinkedIn" class="w-4 lg:w-6">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                        <span><i class="fa-solid fa-envelope"></i> rosatati14@gmail.com</span>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="bg-blue-sapphire text-ghost-white p-4">
+        <div class="h-[12vh] lg:h-auto container max-w-5xl mx-auto mb-3">
+            <p class="text-center">Made with <i class="fa-solid fa-heart text-red-600"></i> by &copy; Tati <span id="year"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

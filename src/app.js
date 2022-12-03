@@ -1,0 +1,1 @@
+const date = document.getElementById("year").innerText = new Date().getFullYear();

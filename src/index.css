@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100;200;300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    @apply bg-slate-700;
+}
+
+html::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link{
+    @apply flex items-center h-20 duration-500 grayscale opacity-70;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus{
+    @apply grayscale-0 opacity-100 bg-blue-green text-white;
+}
+
+.navBar{
+    @apply fixed bg-smokey-black w-20 text-white duration-500;
+}
+
+.nav-item{
+    @apply w-full duration-500;
+}
+
+
+.navLinks{
+    @apply p-0 m-0 flex flex-col items-center h-full;
+}
+
+.link-text{
+    @apply hidden ml-4;
+}
+
+.nav-link svg,
+.logo svg{
+    @apply w-8 min-w-[2rem] mx-6;
+}
+
+.fa-primary,
+.fa-secondary,
+.fa-terciary{
+    @apply duration-500;
+}
+
+.logo{
+    @apply flex items-center bg-blue-green  mb-4 cursor-pointer w-full;
+}
+
+.logo svg{
+    @apply rotate-0 duration-500;
+}
+
+.logo-text{
+    @apply uppercase font-bold text-xl font-lobster duration-500 absolute -left-20;
+}
+
+.navBar:hover .logo svg{
+    @apply -rotate-180;
+}
+
+
+.bg{
+    position: relative;
+    height: 100vh;
+    background-color: #326273;
+    padding: 3rem;
+}
+
+.bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    height: 100%;
+    width: 100%;
+    background: rgba(50, 98, 115, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transform: skew(25deg);
+    z-index: 0;
+}
+
+
+.title{
+    @apply text-center font-lobster text-4xl md:text-5xl lg:text-6xl my-4;
+}
+
+
+.about-text{
+    @apply text-sm text-center sm:text-start leading-5 tracking-wider  sm:text-sm md:text-base md:tracking-normal;
+}
+
+
+.skill-container{
+    @apply  bg-ghost-white font-semibold text-gray-800 shadow-md shadow-gray-900 rounded text-sm text-center cursor-pointer duration-300 hover:-translate-y-1 md:text-base p-2;
+}
+
+button:active,
+button:focus{
+    @apply bg-cadet-blue shadow-2xl text-white;
+}
+
+
+input{
+    @apply w-full p-4 my-2 bg-transparent border-b outline-none focus:border-b-smokey-black;
+}
+
+
+input:focus + label,
+textarea:focus + label{
+    @apply text-smokey-black;
+}
+
+input::placeholder,
+textarea::placeholder{
+    @apply text-xs lg:text-lg font-light text-gray-900;
+}
+
+
+input:focus::placeholder{
+    opacity: 0;
+}
+
+textarea{
+    @apply w-full outline-none p-1 h-20 resize-none my-2 overflow-y-auto bg-transparent border-b;
+}
+
+/*Media queries*/
+
+@media (min-width: 1280px) {
+    .navBar:hover{
+        @apply w-64;
+    }
+
+    .navBar:hover .link-text{
+        @apply inline;
+    }
+
+    .navBar:hover .logo-text{
+        left: 0;
+        padding-left: 1rem;
+    }
+
+    .navBar{
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+        transition: 500ms ease;
+    }
+
+    .navBar:hover .logo svg{
+        margin-left: 11rem;
+    }
+
+    main{
+        margin-left: 5rem;
+    }
+}
+
+@media  (max-width: 1280px) {
+    .navBar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navLinks{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    .nav-item:last-child{
+        display: none;
+    }
+}
