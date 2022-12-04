@@ -93,7 +93,7 @@
     <!--Main Section | Header | About | Projects| Contact-->
     <main class="text-white overflow-hidden">
         <section class="bg overflow-hidden font-lobster h-72" id="home">
-            <div class="wrapper flex flex-col items-center justify-center space-y-1 my-[30%] sm-[10%] lg:my-[9%] z-10 relative" data-aos="fade-left" data-aos-duration="600"  data-aos-easing="ease-in-sine">
+            <div class="wrapper flex flex-col items-center justify-center space-y-1 mt-36 md:mt-36 lg:my-[9%] z-10 relative">
                 <small class="text-2xl font-bold tracking-widest mb-5">Hello!</small>
                 <h1 class="border-2 border-white p-3 text-5xl md:text-7xl lg:text-9xl font-thin rounded-sm">I am <span class="font-bold">Tati</span></h1>
                 <p class="text-xl pt-5 pb-2">A front-end developer</p>
@@ -107,7 +107,7 @@
         </section>
         <!--About section-->
         <section id="about" class="bg-ghost-white w-screen">
-            <div class="container max-w-5xl mx-auto p-3 md:p-5 lg:p-10 grid grid-col-1 md:grid-cols-2 place-items-center gap-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-sine">
+            <div class="container max-w-5xl mx-auto p-3 md:p-5 lg:p-10 grid grid-col-1 md:grid-cols-2 place-items-center gap-5">
                 <article class="mt-6" >
                     <figure class="">
                         <img src="./images/croppedMaria.jpeg" alt="Maria's photo" class="w-48 sm:w-52 lg:w-72">
@@ -128,7 +128,10 @@
                         </button>    
                 </article>
             </div>
-            <div class="bg-cadet-blue text-white p-4 mt-10">
+            <a href="#skills" class="grid place-items-center my-6">
+                <i class="fa-solid fa-arrow-down animate-bounce text-3xl text-dark-blue"></i>
+            </a>
+            <div class="bg-cadet-blue text-white p-4 mt-10" id="skills">
                 <div class="container max-w-5xl mx-auto">
                     <div class="text-center my-2">
                         <h2 class="title">Skills</h2>
@@ -194,7 +197,7 @@
             <div class="max-w-5xl mx-auto p-5">
                 <h2 class="title text-dark-blue py-10">Projects</h2>
                 <div class=" text-gray-800 grid grid-cols-1 grid-row-1 lg:grid-row-3 lg:grid-cols-2 place-items-center gap-10 lg:gap-5">
-                    <article data-aos="zoom-in" data-aos-easing="ease-in-sine" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] md:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                    <article class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
                         <h4 class="font-extrabold text-xl">Project 1</h4>
                         <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
                         <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
@@ -216,7 +219,7 @@
                         </div>
                     </article>
                     <!--Project 2-->
-                    <article data-aos="zoom-in" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                    <article class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
                         <h4 class="font-extrabold text-xl">Project 2</h4>
                         <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
                         <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
@@ -238,7 +241,7 @@
                         </div>
                     </article>
                     <!--Project 3-->
-                    <article data-aos="zoom-in-up" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                    <article class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
                         <h4 class="font-extrabold text-xl">Project 3</h4>
                         <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
                         <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
@@ -260,7 +263,7 @@
                         </div>
                     </article>
                     <!--Project 4-->
-                    <article data-aos="zoom-in-up" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                    <article class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
                         <h4 class="font-extrabold text-xl">Project 4</h4>
                         <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
                         <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
@@ -282,7 +285,7 @@
                         </div>
                     </article>
                     <!--Project 5-->
-                    <article data-aos="zoom-in" class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
+                    <article class="flex flex-col items-center gap-3 shadow-md shadow-gray-400 bg-white w-[350px] lg:w-[400px] py-6 px-6 duration-300 hover:-translate-y-1">
                         <h4 class="font-extrabold text-xl">Project 5</h4>
                         <p class="text-center leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, explicabo asperiores? Laboriosam error animi vitae. Lorem ipsum dolor sit amet.</p>
                         <ul class=" text-sm flex space-x-5 font-semibold text-gray-900">
@@ -308,33 +311,29 @@
         </section>
         <!--Contact form-->
         <section class="w-screen bg-cadet-blue text-white p-4" id="contact">
-            <div data-aos="zoom-out" class="max-w-5xl mx-auto flex items-center flex-col py-5">
+            <div class="max-w-5xl mx-auto flex items-center flex-col py-5">
                 <h2 class="title">Get in Touch!</h2>
                 <p class="lg:text-lg tracking-wide text-stone-100 text-center py-4 font-light text-sm px-6 lg:px-0">
                     Got a question? A project in mind? Looking for a new addition to your front-end team? or just want to talk?
                    Go ahead <span class="text-red-500">&hearts;</span>.
                 </p>
-                <section class="flex items-center flex-wrap gap-5">
-                    <div>
+                <section class="flex items-center justify-center flex-wrap gap-5">
                         <a href="https://github.com/Tati-Maria" target="_blank" class="flex items-center gap-2 duration-500 hover:scale-110 opacity-75 active:opacity-100">
                             <img src="./images/icons/github.svg" alt="github" class="w-4 lg:w-6">
                             <span>Github</span>
                         </a>
-                    </div>
-                    <div>
                         <a href="https://www.linkedin.com/in/maria-tati/" target="_blank" class="flex items-center gap-2 duration-500 hover:scale-110 opacity-75 active:opacity-100">
-                            <img src="./images/icons/linkedin.svg" alt="LinkedIn" class="w-4 lg:w-6">
+                            <img src="./images/icons/linkedin.svg" alt="LinkedIn" class="w-6 lg:w-6">
                             <span>LinkedIn</span>
                         </a>
-                    </div>
                         <span><i class="fa-solid fa-envelope"></i> rosatati14@gmail.com</span>
                 </section>
             </div>
         </section>
     </main>
     <!--Footer-->
-    <footer class="bg-blue-sapphire text-ghost-white p-4">
-        <div class="h-[12vh] lg:h-auto container max-w-5xl mx-auto mb-3">
+    <footer class=" bg-blue-sapphire text-ghost-white p-4">
+        <div class="h-[12vh] lg:h-[5vh] container max-w-5xl mx-auto mb-3">
             <p class="text-center">Made with <i class="fa-solid fa-heart text-red-600"></i> by &copy; Tati <span id="year"></span></p>
         </div>
     </footer>
